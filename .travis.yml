@@ -18,5 +18,5 @@ script:
   - bundle exec rspec
 after_script:
   - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-  - docker tag $DOCKER_USER/factorio $DOCKER_USER/factorio:$VERSION
+  - docker tag $DOCKER_USER/factorio $DOCKER_USER/factorio:latest
   - docker push $DOCKER_USER/factorio
