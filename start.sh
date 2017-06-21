@@ -19,7 +19,7 @@ create_map() {
 
 start_server() {
   echo "Starting..."
-  bin/x64/factorio --start-server save
+  bin/x64/factorio --start-server save.zip
 }
 
 if [ $# -ne 0 ]; then
